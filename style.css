@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.left-side-header {
+  width: 40%;
+}
+.left-side-header h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  border-top: 1px solid white;
+  padding-top: 15px;
+  margin-bottom: 170px;
+}
+.option p {
+  font-size: 14px;
+}
+.starting-text {
+  display: flex;
+  color: black;
+  gap: 3px;
+  align-items: center;
+}
+.starting-text p {
+  background-color: rgb(255, 235, 146);
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+.starting-text img {
+  background-color: rgb(255, 235, 146);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+
+
+.right-side-header {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.right-side-header p {
+  font-size: 22px;
+  line-height: 35px;
+}
+.right-side-header h2 {
+  font-size: 50px;
+  font-family: monospace;
+}
+.right-side-header img {
+  width: 17px;
+  position: absolute;
+  right: -15px;
+  bottom: 7px;
+}
+.company-name {
+  position: relative;
+  width: fit-content;
+}
+
+
+/* Attributes */
+.attributes {
+  background-color: black;
+  color: white;
+  padding: 50px 10%;
+}
+.attributes h2 {
+  font-size: 27px;
+  margin-bottom: 25px;
+}
+.attributes-container {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+
+}
+.attributes-text {
+  border: 1px solid rgb(194, 194, 194);
+  padding: 20px;
+  line-height: 30px;
+}
+.attributes-text:hover {
+  background: linear-gradient(to right, rgb(0, 0, 0), rgba(190, 190, 190, 0.295));
+}
+
+.attributes-text img {
+  padding: 2px;
+  background-color: white;
+}
+.attributes-text h3 {
+  font-size: 25px;
+  font-weight: 100;
+  margin: 10px 0;
+}
+.attributes-text p {
+  font-weight: 100;
+  font-size: 15px;
+  color: rgb(155, 155, 155);
+}
+
+
+/* Strategy section */
+.strategy {
+  padding: 70px 0;
+}
+
+.strategy h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 27px;
+}
+
+.strategy-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: white;
+  gap: 10px;
+}
+
+
+.first-strategy img {
+  width: 290px;
+  height: 500px;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 25px;
+}
+.second-strategy img {
+  width: 290px;
+  height: 500px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
+}
+.third-strategy img {
+  width: 290px;
+  height: 500px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 25px;
+}
+
+.first-strategy,
+.second-strategy,
+.third-strategy {
+  height: 500px;
+  width: 290px;
+  position: relative;
+}
+.strategy-text {
+  position: absolute;
+  top: 100px;
+  text-align: center;
+  margin: 0 10%;
+  height: 120px;
+}
+.starting-text h3 {
+  line-height: 40px;
+  font-family: Fontopo;
+}
+
+
+/* Pricing */
+.pricing {
+  padding: 30px 10%;
+}
+.pricing h2{
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+.pricing-container {
+  display: flex;
+  border: 1px solid black;
+}
+.pricing-text {
+  padding: 30px 2%;
+  width: 100%;
+  line-height: 30px;
+}
+.pricing-text h4,
+p {
+  font-weight: 100;
+  font-size: 14px;
+}
+.pricing-text button {
+  width: 100%;
+  border-radius: 50px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+/* Testimonials */
+.testimonials {
+  background: url(images/images.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 50px 5% 80px;
+}
+.testimonials h2 {
+  text-align: center;
+  font-size: 28px;
+  padding: 20px 0;
+}
+.testimonial-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2%;
+}
+.testimonial-text>p {
+  background-color: rgba(165, 165, 165, 0.192);
+  padding: 40px 27px;
+  border-radius: 7px;
+  line-height: 20px;
+}
+.testimonial-profile {
+  display: flex;
+  margin-top: 30px;
+  gap: 10px;
+}
+.testimonial-name h3 {
+  font-weight: 100;
+  font-size: 15px;
+}
+.testimonial-name p {
+  color: gray;
+  font-size: 13px;
+}
+.testimonial-arrow {
+  position: absolute;
+  right: 5%;
+}
+.testimonial-arrow img{
+  width: 40px;
+  cursor: pointer;
+}
+
+
+
+/* Interaction */
+.interaction {
+  display: flex;
+  width: 100%;
+}
+.interaction-container {
+  width: 50%;
+  padding: 5%;
+}
+.interaction-container h1 {
+  font-size: 33px;
+}
+.interaction-container p {
+  line-height: 23px;
+  color: rgb(54, 54, 54);
+  padding: 20px 0;
+}
+.interaction-container div {
+  display: flex;
+  gap: 3px;
+}
+.interaction-container button {
+  padding: 10px 37px;
+  background-color: rgb(231, 219, 165);
+  border: none;
+  border-radius: 20px;
+}
+.interaction-container img {
+  background-color: rgb(231, 219, 165);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.interaction-image {
+  width: 50%;
+}
+.interaction-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+
+/* Contact */
+.contact {
+  background-color: black;
+  color: white;
+  display: grid;
+  padding: 70px 5%;
+  gap: 5%;
+  grid-template-columns: 1fr 200px 200px;
+}
+.contact h2{
+  color: rgb(231, 219, 165);
+  font-size: 29px;
+  padding-bottom: 40px;
+}
+.contact h3 {
+  font-size: 14px;
+  padding-bottom: 40px;
+  color: rgb(231, 219, 165);
+}
+.contact-text {
+  width: 70%;
+  line-height: 20px;
+}
+.contact-info p {
+  margin-bottom: 10px;
+}
+.contact-info p img {
+  width: 20px;
+}
+.navigation p {
+  margin-bottom: 19px;
+}
